@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por: mari</title>
+    <style>
+        :root {
+            --sea-salt: #9cb9c1;
+            --light-sky: #bed1dd;
+            --peach-cream: #efe3d2;
+            --cotton-pink: #f3aac6;
+        }
+        
+        body {
+            background: #e7e3e3;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--sea-salt);
+            line-height: 1.8;
+            min-height: 100vh;
+            margin: 0;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .header {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--cotton-pink);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            letter-spacing: 3px;
+        }
+        
+        .subtitle {
+            font-size: 1.8rem;
+            color: var(--sea-salt);
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        
+        .reveal-link {
+            display: inline-block;
+            background: var(--cotton-pink);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 25px 0;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(238, 200, 201, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .reveal-link:before {
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+        }
+        
+        .reveal-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(238, 200, 201, 0.6);
+            background: var(--light-sky);
+        }
+        
+        .lyrics {
+            display: none;
+            background: white;
+            border-radius: 25px;
+            padding: 25px;
+            margin: 20px auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .lyrics:before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: var(--cotton-pink);
+            border-radius: 50%;
+            opacity: 0.2;
+        }
+        
+        .lyrics:after {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 100px;
+            height: 100px;
+            background: var(--light-sky);
+            border-radius: 50%;
+            opacity: 0.2;
+        }
+        
+        .lyrics p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+        }
+        
+        .signature {
+            font-style: italic;
+            color: var(--cotton-pink);
+            font-size: 1.3rem;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        
+        .heart-decoration {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: var(--cotton-pink);
+            clip-path: path('M15,2 C15.5,2 16,2.5 16,3 C16,3.5 15.5,4 15,4 C14.5,4 14,3.5 14,3 C14,2.5 14.5,2 15,2 Z');
+            margin: 0 5px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .lyrics {
+            animation: fadeIn 0.6s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Por: mari</h1>
+        <p class="subtitle">Querido Gigico,</p>
+        
+        <a href="#" class="reveal-link" onclick="document.querySelector('.lyrics').style.display='block'; this.style.display='none'; return false;">
+        Leia-me!
+        </a>
+        
+        <div class="lyrics">
+            <p>I would sail across the world<br>
+            Row this boat from dusk till dawn<br>
+            To a place where we belong<br>
+            Girl your body is calling me</p>
+            
+            <p style="margin-top: 15px;">There ain't no sunshine, no sunshine<br>
+            Where I was before<br>
+            But I found the love the warmth in your arms</p>
+            
+            <p style="margin-top: 15px;">Won't you come closer?<br>
+            Let it take over<br>
+            I don't need anything, I just want you</p>
+        </div>
+        
+        <div class="signature">- Mari</div>
+        
+        <div style="margin-top: 30px;">
+            <span class="heart-decoration"></span>
+            <span class="heart-decoration" style="animation-delay: 0.3s;"></span>
+            <span class="heart-decoration" style="animation-delay: 0.6s;"></span>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.reveal-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            const lyrics = document.querySelector('.lyrics');
+            lyrics.style.display = 'block';
+            this.style.display = 'none';
+        
+            setTimeout(() => {
+                lyrics.style.opacity = '1';
+            }, 10);
+        });
+    </script>
+</body>
+</html>
