@@ -66,11 +66,11 @@ no.addEventListener('touchstart', (e)=>{e.preventDefault(); moveNo();},{passive:
 no.addEventListener('click', moveNo);
 yes.addEventListener('click', ()=>{
   document.querySelector('h1').innerHTML = 'EU SABIA!<br><em>♡ ♡ ♡</em>';
-  document.querySelector('.card > p').textContent = 'Agora só falta escolher o dia. Já tô felizinho(a)!';
+  document.querySelector('.card > p').textContent = 'Vou estar te esperando as 00h. Já tô felizinho(a)!';
   buttons.style.display='none';
   no.style.display='none';
   document.getElementById('yay').style.display='block';
-  document.getElementById('note').textContent='mal posso esperar pelo nosso encontro ✧';
+  document.getElementById('note').textContent='mal posso esperar pela nossa noite ✧';
   for(let i=0;i<28;i++){
     const h=document.createElement('span');
     h.className='heart';h.textContent=['♡','♥','୨୧','✧'][Math.floor(Math.random()*4)];
