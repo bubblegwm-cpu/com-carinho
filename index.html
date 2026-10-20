@@ -1,197 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Por: mari</title>
-    <style>
-        :root {
-            --sea-salt: #9cb9c1;
-            --light-sky: #bed1dd;
-            --peach-cream: #efe3d2;
-            --cotton-pink: #f3aac6;
-        }
-        
-        body {
-            background: #e7e3e3;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--sea-salt);
-            line-height: 1.8;
-            min-height: 100vh;
-            margin: 0;
-            background-attachment: fixed;
-        }
-        
-        .container {
-            max-width: 500px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
-        .header {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: var(--cotton-pink);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            letter-spacing: 3px;
-        }
-        
-        .subtitle {
-            font-size: 1.8rem;
-            color: var(--sea-salt);
-            margin-bottom: 30px;
-            font-weight: bold;
-        }
-        
-        .reveal-link {
-            display: inline-block;
-            background: var(--cotton-pink);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 50px;
-            font-weight: bold;
-            text-decoration: none;
-            margin: 25px 0;
-            transition: all 0.4s ease;
-            box-shadow: 0 4px 15px rgba(238, 200, 201, 0.4);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .reveal-link:before {
-            position: absolute;
-            left: -10px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 1.2rem;
-        }
-        
-        .reveal-link:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(238, 200, 201, 0.6);
-            background: var(--light-sky);
-        }
-        
-        .lyrics {
-            display: none;
-            background: white;
-            border-radius: 25px;
-            padding: 25px;
-            margin: 20px auto;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            text-align: left;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .lyrics:before {
-            content: "";
-            position: absolute;
-            top: -50px;
-            right: -50px;
-            width: 150px;
-            height: 150px;
-            background: var(--cotton-pink);
-            border-radius: 50%;
-            opacity: 0.2;
-        }
-        
-        .lyrics:after {
-            content: "";
-            position: absolute;
-            bottom: -30px;
-            left: -30px;
-            width: 100px;
-            height: 100px;
-            background: var(--light-sky);
-            border-radius: 50%;
-            opacity: 0.2;
-        }
-        
-        .lyrics p {
-            position: relative;
-            z-index: 2;
-            margin: 0;
-        }
-        
-        .signature {
-            font-style: italic;
-            color: var(--cotton-pink);
-            font-size: 1.3rem;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        
-        .heart-decoration {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            background: var(--cotton-pink);
-            clip-path: path('M15,2 C15.5,2 16,2.5 16,3 C16,3.5 15.5,4 15,4 C14.5,4 14,3.5 14,3 C14,2.5 14.5,2 15,2 Z');
-            margin: 0 5px;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .lyrics {
-            animation: fadeIn 0.6s ease;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>um convite especial ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#f4cbd5;--rose:#d98da4;--cream:#fff9f6;--wine:#865568;--ink:#684958}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 15% 15%,#fff 0 2px,transparent 3px),radial-gradient(circle at 85% 78%,#fff 0 2px,transparent 3px),linear-gradient(135deg,#fbe5e9,#fff6f2 52%,#f7dce4);background-size:34px 34px,42px 42px,auto;color:var(--ink);font-family:'DM Sans',sans-serif;overflow:hidden}
+.card{width:min(100%,460px);min-height:510px;padding:38px 28px 34px;text-align:center;position:relative;background:rgba(255,249,246,.92);border:1px solid #e8bdca;border-radius:240px 240px 28px 28px;box-shadow:0 20px 55px #a66b7a22, inset 0 0 0 7px #fff8f5, inset 0 0 0 8px #f2d7df;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.card:before,.card:after{content:"✧ ･ﾟ";position:absolute;color:#d59bad;font-size:18px;letter-spacing:7px;top:27px}.card:after{content:"♡ ୨୧";top:auto;bottom:24px}
+.bow{font-size:54px;line-height:1;margin-bottom:16px;filter:drop-shadow(0 5px 3px #d58ca433)}
+.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#bc8297;margin-bottom:12px}
+h1{font:600 clamp(29px,7vw,38px)/1.18 'Playfair Display',serif;margin:0 0 13px;color:#89586d}
+h1 em{font-weight:500;color:#c77e98}
+p{font-size:14px;line-height:1.7;max-width:290px;margin:0 auto;color:#9a7887}
+.divider{color:#d49aac;letter-spacing:8px;margin:20px 0 22px;font-size:14px}
+.buttons{display:flex;gap:13px;align-items:center;justify-content:center;flex-wrap:wrap;min-height:52px;width:100%;position:relative}
+button{border:0;border-radius:999px;padding:13px 28px;font:600 13px 'DM Sans',sans-serif;cursor:pointer;transition:transform .2s,box-shadow .2s;letter-spacing:.3px}
+button:focus-visible{outline:3px solid #bd7f96;outline-offset:4px}
+#yes{background:#d990a7;color:white;box-shadow:0 6px 0 #bd7c94,0 10px 20px #d990a733}
+#yes:hover{transform:translateY(-2px);box-shadow:0 8px 0 #bd7c94,0 12px 22px #d990a733}
+#no{background:#fff;color:#a47789;border:1px solid #e8c7d1;box-shadow:0 4px 0 #f0dbe1}
+.note{margin-top:24px!important;font-size:11px!important;color:#c093a3!important;letter-spacing:.4px}
+#yay{display:none;margin-top:22px;font:italic 500 25px 'Playfair Display',serif;color:#b96e8a}
+.heart{position:fixed;pointer-events:none;animation:float 3.5s ease-out forwards;z-index:5}
+@keyframes float{0%{transform:translateY(0) scale(.7) rotate(0);opacity:0}15%{opacity:1}100%{transform:translateY(-110vh) scale(1.25) rotate(35deg);opacity:0}}
+@media(max-height:650px){.card{min-height:460px;padding-top:34px;padding-bottom:34px}.bow{font-size:44px}h1{font-size:30px}.divider{margin:13px 0 16px}}
+</style>
 </head>
 <body>
-    <div class="container">
-        <p class="subtitle">Querido Gigico,</p>
-        
-        <a href="#" class="reveal-link" onclick="document.querySelector('.lyrics').style.display='block'; this.style.display='none'; return false;">
-        Leia-me!
-        </a>
-        
-        <div class="lyrics">
-            <p>I would sail across the world<br>
-            Row this boat from dusk till dawn<br>
-            To a place where we belong<br>
-            Girl your body is calling me</p>
-            
-            <p style="margin-top: 15px;">There ain't no sunshine, no sunshine<br>
-            Where I was before<br>
-            But I found the love the warmth in your arms</p>
-            
-            <p style="margin-top: 15px;">Won't you come closer?<br>
-            Let it take over<br>
-            I don't need anything, I just want you</p>
-        </div>
-        
-        <div style="margin-top: 30px;">
-            <span class="heart-decoration"></span>
-            <span class="heart-decoration" style="animation-delay: 0.3s;"></span>
-            <span class="heart-decoration" style="animation-delay: 0.6s;"></span>
-        </div>
-    </div>
-
-    <script>
-        document.querySelector('.reveal-link').addEventListener('click', function(e) {
-            e.preventDefault();
-            const lyrics = document.querySelector('.lyrics');
-            lyrics.style.display = 'block';
-            this.style.display = 'none';
-        
-            setTimeout(() => {
-                lyrics.style.opacity = '1';
-            }, 10);
-        });
-    </script>
+<main class="card">
+  <div class="bow" aria-hidden="true">🎀</div>
+  <div class="eyebrow">um convitinho especial</div>
+  <h1><em>cuzinho hoje?</em></h1>
+  <p>Gf gostosinho, um momentinho fofo depois<br>e talvez sua nova memória favorita ♡</p>
+  <div class="divider" aria-hidden="true">୨୧ · ˚ ♡ ˚ · ୨୧</div>
+  <div class="buttons" id="buttons">
+    <button id="yes">sim, clarooo ♡</button>
+    <button id="no">não 🙈</button>
+  </div>
+  <div id="yay">ebaa, gf hoje!!!! ♡</div>
+  <p class="note" id="note">escolha com carinho, tá? ૮ ˶ᵔ ᵕ ᵔ˶ ა</p>
+</main>
+<script>
+const no = document.getElementById('no');
+const yes = document.getElementById('yes');
+const buttons = document.getElementById('buttons');
+const card = document.querySelector('.card');
+let attempts = 0;
+function moveNo(){
+  attempts++;
+  const maxX = Math.max(0, window.innerWidth - no.offsetWidth - 24);
+  const maxY = Math.max(0, window.innerHeight - no.offsetHeight - 24);
+  no.style.position = 'fixed';
+  no.style.left = (12 + Math.random() * maxX) + 'px';
+  no.style.top = (12 + Math.random() * maxY) + 'px';
+  no.style.zIndex = '10';
+  no.textContent = ['ops! 😳','quase! ','tenta de novo ','ih, fugiu!'][attempts % 4];
+}
+no.addEventListener('mouseenter', moveNo);
+no.addEventListener('touchstart', (e)=>{e.preventDefault(); moveNo();},{passive:false});
+no.addEventListener('click', moveNo);
+yes.addEventListener('click', ()=>{
+  document.querySelector('h1').innerHTML = 'EU SABIA!<br><em>♡ ♡ ♡</em>';
+  document.querySelector('.card > p').textContent = 'Agora só falta escolher o dia. Já tô felizinho(a)!';
+  buttons.style.display='none';
+  no.style.display='none';
+  document.getElementById('yay').style.display='block';
+  document.getElementById('note').textContent='mal posso esperar pelo nosso encontro ✧';
+  for(let i=0;i<28;i++){
+    const h=document.createElement('span');
+    h.className='heart';h.textContent=['♡','♥','୨୧','✧'][Math.floor(Math.random()*4)];
+    h.style.left=Math.random()*100+'vw';h.style.bottom='-30px';
+    h.style.fontSize=(14+Math.random()*20)+'px';h.style.color=['#d990a7','#c77e98','#e6a9bc'][i%3];
+    h.style.animationDelay=(Math.random()*.9)+'s';document.body.appendChild(h);
+    setTimeout(()=>h.remove(),4500);
+  }
+});
+</script>
 </body>
-
 </html>
